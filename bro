@@ -74,7 +74,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _set_bot () {
     local zippath
-    zippath="JASEM1.zip"
+    zippath="ZedThon1.zip"
     echo "جاري تنزيل اكواد السورس "
     wget -q $(_get_ziplink) -O "$zippath"
     echo " تفريغ البيانات "
@@ -93,7 +93,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m jmub
+    python3 -m zthon
 }
 
 _set_bot
