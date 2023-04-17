@@ -1,11 +1,11 @@
-FROM thejmthon/jmub:slim-buster
+FROM zed-thon/zelzal:slim-buster
 
-RUN git clone https://github.com/thejmthon/jmub.git /root/jmub
+RUN git clone https://github.com/zeinn0/zelzal.git /root/zthon
 
-WORKDIR /root/jmub
+WORKDIR /root/zthon
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-ENV PATH="/home/jmub/bin:$PATH"
+ENV PATH="/home/zthon/bin:$PATH"
 
-CMD ["python3","-m","jmub"]
+CMD ["python3","-m","zthon"]
