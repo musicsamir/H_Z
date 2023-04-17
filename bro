@@ -4,7 +4,7 @@
 _get_ziplink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "sbb_b" ]]
+    if [[ $UPSTREAM_REPO == "zel" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL3plaW5uMC9aRUxaQUwvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $UPSTREAM_REPO == "beta" ]]
@@ -27,7 +27,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "sbb_b" ]]
+    if [[ $UPSTREAM_REPO == "zel" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMC9aZWxaYWw=" | base64 -d`
     elif [[ $UPSTREAM_REPO == "beta" ]]
