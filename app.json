@@ -57,6 +57,7 @@
     "VCMODE": {
       "description": "الميوزك سيبه زي مهوه", 
       "value": "True"
+      "required": false
     }
   },
   "addons": [{
