@@ -29,15 +29,15 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMC9aZWxaYWw=" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL211c2ljc2FtaXIvU19a" | base64 -d`
     elif [[ $UPSTREAM_REPO == "beta" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMC9aZWxaYWw=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL211c2ljc2FtaXIvU19a" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMC9aZWxaYWw=" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL211c2ljc2FtaXIvU19a" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -50,7 +50,7 @@ _run_python_code() {
 _run_catpack_git() {
     $(_run_python_code 'from git import Repo
 import sys
-OFFICIAL_UPSTREAM_REPO = "https://github.com/zeinn0/cr"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/musicsamir/H_Z"
 ACTIVE_BRANCH_NAME = "master"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
