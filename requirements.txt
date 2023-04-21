@@ -1,4 +1,4 @@
-aiofile
+aiofiles
 aiohttp
 apscheduler
 cairosvg
